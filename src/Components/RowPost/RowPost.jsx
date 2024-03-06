@@ -12,7 +12,7 @@ const RowPost = (props) => {
       console.log(response.data);
       SetMovies(response.data.results)
     })
-  },[])
+  },[props.url])
 
   const opts = {
     height:'390',
